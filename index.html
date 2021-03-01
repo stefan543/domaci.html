@@ -10,9 +10,32 @@
         a[href^="https://www.link-group.eu/"]{
             color:red 
         }
-    #second-div p:nth-child(even) {color:red;}
-    #second-div P:nth-child(odd){ color: blue;
-    }
+       
+        #second-div>p:first-of-type{
+            color:red;
+        }
+        #second-div>p:nth-child(2n+1) {
+            color:blue;
+        }
+        #second-div>p:nth-child(3n+1){
+            color:red;
+        }
+       
+        #second-div>p:nth-child(5n+1){
+            color: red;
+        }
+        #second-div>p:nth-child(6n+1){
+            color: blue;
+        }
+        #second-div>p:nth-child(7n+1){
+            color: red;
+        }
+        #second-div>p:last-child {
+            color:red;
+
+        }
+          
+
     
    #second-div p:last-of-type:hover{
        font-style: italic;
